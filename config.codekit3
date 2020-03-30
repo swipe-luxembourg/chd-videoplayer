@@ -1463,14 +1463,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/sources/Sans titre": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/build/Sans titre",
-		"oF": 0
-		},
 	"/sources/sass/_integration.scss": {
 		"aP": 1,
 		"bl": 1,
