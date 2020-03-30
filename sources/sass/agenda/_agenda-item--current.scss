@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// Agenda item current
+// -----------------------------------------------------------------------------
+
+.agenda-current {
+
+  & > .agenda-title {
+    color: $chd-lightred;
+    text-decoration: underline;
+  }
+
+  & > .agenda-title:before {
+    background-color: $chd-lightred;
+  }
+
+}

@@ -1,0 +1,140 @@
+// -----------------------------------------------------------------------------
+// Integration
+// -----------------------------------------------------------------------------
+
+#download {
+  position: relative;
+  margin: 0 10px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+
+  // Small screens
+  @media (max-width : $small-max-size) {
+    margin: 0;
+  }
+
+  .button-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 0 none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .download-sequence_title {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .custom-container {
+    margin-top: 10px;
+  }
+
+  .custom-start, .custom-end {
+    display: inline-block;
+
+    // Small screens
+    @media (max-width : $small-max-size) {
+      margin-right: 0 0 0 20px;
+    }
+  }
+
+  .custom-start__label, .custom-end__label {
+    font-size: 12px;
+
+    // Small screens
+    @media (max-width : $small-max-size) {
+      margin-top: 10px;
+      display: block;
+    }
+  }
+
+  .custom-start__button, .custom-end__button {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 45px 10px 15px;
+    border: 1px solid #efefef;;
+    text-align: left;
+    cursor: pointer;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+
+
+
+    // Small screens
+    @media (max-width : $small-max-size) {
+      margin: 5px 0 0 0;
+    }
+
+    .material-icons {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background: #efefef;
+      padding: 7px 0;
+      width: 30px;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+
+  .button-container {
+    margin-top: 10px;
+
+    // Small screens
+    @media (max-width : $small-max-size) {
+      margin-top: 20px;
+    }
+  }
+
+  .button-download {
+    display: inline-block;
+    margin: 20px 10px 0 0;
+    padding: 10px 15px 10px 35px;
+    border: 0 none;
+    text-align: center;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.2s;
+    cursor: pointer;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-color: $action-base;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    // Small screens
+    @media (max-width : $small-max-size) {
+      margin-top: 15px;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    &.button-wmv {
+      background-image: url(../img/button-icon-wmv.png);
+    }
+
+    &.button-mp4 {
+      background-image: url(../img/button-icon-mp4.png);
+    }
+
+    &.button-mp3 {
+      background-image: url(../img/button-icon-mp3.png);
+    }
+
+  }
+
+}

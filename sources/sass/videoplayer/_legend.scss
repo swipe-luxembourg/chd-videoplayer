@@ -1,0 +1,143 @@
+// -----------------------------------------------------------------------------
+// Legend / Help
+// -----------------------------------------------------------------------------
+
+#legend {
+  position: relative;
+  margin: 0 10px;
+  padding: 20px;
+  border-radius: 0 0 2px 2px;
+  background: $chd-darkgrey;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+
+  .legend-title {
+    font-size: 13px;
+    color: #fff;
+  }
+
+  .legend-list {
+    margin-top: 10px;
+    @include clearfix;
+  }
+
+  .legend-item {
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    padding: 6px 0 0 40px;
+    min-height: 26px;
+    line-height: 1.3;
+  }
+
+  .legend-tip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    background-color: $action-base;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .legend-play {
+    background-image: url(../img/icons/play_arrow-black-18dp/2x/baseline_play_arrow_black_18dp.png);
+    background-size: 16px auto;
+  }
+
+  .legend-stop {
+    background-image: url(../img/icons/stop-black-18dp/2x/baseline_stop_black_18dp.png);
+    background-size: 16px auto;
+  }
+
+  .legend-download {
+    background-image: url(../img/icons/get_app-black-18dp/2x/baseline_get_app_black_18dp.png);
+    background-size: 16px auto;
+  }
+
+  .legend-mail {
+    background-image: url(../img/icons/mail_outline-black-18dp/2x/baseline_mail_outline_black_18dp.png);
+    background-size: 16px auto;
+  }
+
+  .legend-share {
+    background-image: url(../img/icons/share-black-18dp/2x/baseline_share_black_18dp.png);
+    background-size: 16px auto;
+  }
+
+  .legend-expand {
+    background-image: url(../img/icons/expand_more-black-18dp/2x/baseline_expand_more_black_18dp.png);
+    background-size: 16px auto;
+  }
+
+  .legend-collapse {
+    background-image: url(../img/icons/expand_less-black-18dp/2x/baseline_expand_less_black_18dp.png);
+    background-size: 16px auto;
+  }
+
+  // More button, only for small screen
+  .button-more {
+    display: none;
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    background-color: $action-important;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+
+    &:hover {
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  @media (max-width : $medium-max-size) {
+    margin: 0;
+    border-radius: 0;
+
+    .legend-list {
+      display: none;
+    }
+
+    &.is-open .legend-list {
+      display: block;
+    }
+
+    .legend-item {
+      width: 100%;
+    }
+
+    .button-more {
+      display: block;
+    }
+  }
+
+  // Bigger more button on small screen
+  @media (max-width : $small-max-size) {
+    .button-more {
+      top: 10px;
+      margin: 0 0 0 20px;
+      width: 32px;
+      height: 32px;
+
+      .material-icons {
+        font-size: 20px;
+        line-height: 32px;
+      }
+    }
+  }
+
+}

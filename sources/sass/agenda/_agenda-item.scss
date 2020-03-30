@@ -1,0 +1,194 @@
+// -----------------------------------------------------------------------------
+// Agenda item
+// -----------------------------------------------------------------------------
+
+.agenda-item {
+  position: relative;
+  margin: 20px 0 0 0;
+  padding: 20px 20px 20px 30px;
+  border-radius: 2px;
+  min-height: 64px;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+
+  @media (max-width : $small-max-size) {
+    margin: 0;
+    border-top: 1px solid #efefef;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .agenda-point {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  /* Title */
+  .agenda-title {
+    position: relative;
+    margin: 0 180px 0 0;
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+
+    @media (max-width : $small-max-size) {
+      margin-right: 0;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: -18px;
+      border-radius: 50%;
+      width: 7px;
+      height: 7px;
+      background-color: $dot-basic;
+      z-index: 10;
+    }
+  }
+
+  /* Speaker */
+  .agenda-speaker {
+    display: block;
+    margin: 10px 145px 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+
+    @media (max-width : $small-max-size) {
+      margin-right: 0;
+    }
+
+    .txt-bold {
+      font-weight: 700;
+      color: #333;
+    }
+  }
+
+  /* Attachments */
+  .agenda-attachments {
+    margin: 10px 145px 0 0;
+
+    @media (max-width : $medium-max-size) {
+      margin-right: 0;
+    }
+
+    .attachment-item {
+      display: inline-block;
+      margin-right: 5px;
+      font-size: 14px;
+    }
+
+    .attachment-link {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #666;
+    }
+
+    .attachment-link:hover {
+      text-decoration: underline;
+    }
+
+    .txt-bold {
+      font-weight: 700;
+      color: #333;
+    }
+  }
+
+}
+
+// Agenda item - Second level
+// -----------------------------------------------------------------------------
+
+.agenda-container .agenda-container {
+  display: none;
+}
+
+.agenda-container .agenda-container > .agenda-item {
+  position: relative;
+  margin: 20px 0 0 0;
+  background: #eee;
+
+
+  // Dotted horizontal line
+  &:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: -14px;
+    border-top: 1px dotted $dot-basic;
+    width: 14px;
+  }
+
+  &:after {
+    top: 30px;
+  }
+
+  @media (max-width : $small-max-size) {
+    margin: 20px 0 0 0;
+    border: 0 none;
+    border-radius: 2px;
+    font-size: 14px;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1);
+  }
+
+}
+
+// Agenda item - Third level
+// -----------------------------------------------------------------------------
+
+.agenda-container .agenda-container .agenda-container {
+  display: none;
+}
+
+.agenda-container .agenda-container .agenda-container > .agenda-item {
+  position: relative;
+  background: #fff;
+
+  &:first-child {
+    margin-top: 30px;
+  }
+
+}
+
+// Agenda item - Fourth level
+// -----------------------------------------------------------------------------
+
+.agenda-container .agenda-container .agenda-container .agenda-container {
+  display: none;
+}
+
+.agenda-container .agenda-container .agenda-container .agenda-container > .agenda-item {
+  position: relative;
+  background: #eee;
+
+  &:first-child {
+    margin-top: 30px;
+  }
+
+}
+
+// Agenda item - Fifth level
+// -----------------------------------------------------------------------------
+
+.agenda-container .agenda-container .agenda-container .agenda-container .agenda-container {
+  display: none;
+}
+
+.agenda-container .agenda-container .agenda-container .agenda-container .agenda-container > .agenda-item {
+  position: relative;
+  background: #fff;
+
+  &:first-child {
+    margin-top: 30px;
+  }
+
+}

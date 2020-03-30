@@ -1,0 +1,38 @@
+// Source : http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+
+// -----------------------------------------------------------------------------
+// Image asset helper
+// Usage : image('filename.ext')
+// -----------------------------------------------------------------------------
+
+@function image($file) {
+  @return url($image-path + '/' + $file);
+}
+
+// -----------------------------------------------------------------------------
+// Visually hide an element (accessible)
+// Usage : class="visually-hidden"
+// -----------------------------------------------------------------------------
+
+%visuallyhidden {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
+// -----------------------------------------------------------------------------
+// Clearfix
+// -----------------------------------------------------------------------------
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

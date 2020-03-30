@@ -1,0 +1,98 @@
+// -----------------------------------------------------------------------------
+// Agenda item opened
+// -----------------------------------------------------------------------------
+
+.agenda-open {
+  position: relative;
+
+  // Dotted vertical line
+  &:after {
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 15px;
+    bottom: 0;
+    border-left: 1px dotted $dot-basic;
+    z-index: 1;
+  }
+
+  // Bottom mask first level
+  .mask-bottom {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+    bottom: O;
+    z-index: 100;
+  }
+
+  // Bottom mask second level
+  .agenda-item .mask-bottom {
+    background-color: #eee;
+  }
+
+  // Bottom mask third level
+  .agenda-item .agenda-item .mask-bottom {
+    background-color: #fff;
+  }
+
+  // Bottom mask fourth level
+  .agenda-item .agenda-item .agenda-item .mask-bottom {
+    background-color: #eee;
+  }
+
+  // Top mask first level
+  & .agenda-item .mask-top {
+    content: '';
+    position: absolute;
+    top: 31px;
+    bottom: 0;
+    left: -20px;
+    width: 10px;
+    background-color: #fff;
+    z-index: 100;
+  }
+
+  // Top mask second level
+  & .agenda-item .agenda-item .mask-top {
+    background-color: #eee;
+  }
+
+  // Top mask third level
+  & .agenda-item .agenda-item .agenda-item .mask-top {
+    background-color: #fff;
+  }
+
+  // Top mask fourth level
+  & .agenda-item .agenda-item .agenda-item .agenda-item .mask-top {
+    background-color: #eee;
+  }
+
+  .agenda-container {
+    display: block;
+  }
+
+  .agenda-open .agenda-container {
+    display: block;
+  }
+
+  .agenda-open .agenda-open .agenda-container {
+    display: block;
+  }
+
+  .agenda-open .agenda-open .agenda-open .agenda-container {
+    display: block;
+  }
+
+  & > .agenda-actions .button-expand {
+    display: none;
+  }
+
+  & > .agenda-actions .button-collapse {
+    display: inline-block;
+  }
+
+}

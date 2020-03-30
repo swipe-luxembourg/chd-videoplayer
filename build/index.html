@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="Séance publique du 20/01/2016">
+  <meta name="author" content="Chambre des députés du Grand ">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./img/app-icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Séance publique">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>Séance publique du 20/01/2016</title>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/app-icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/app-icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/app-icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/app-icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/app-icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/app-icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/app-icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/app-icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/app-icons/apple-icon-180x180.png">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="img/app-icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/app-icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/app-icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/app-icons/favicon-16x16.png">
+
+  <link rel="manifest" href="manifest.json">
+
+  <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+
+  <link rel="stylesheet" href="js/vendors/video-js-5.11.0/video-js.css">
+  <link rel="stylesheet" href="css/chd-videoplayer.css">
+
+  <script type="text/javascript" src="js/vendors/jquery-2.2.4.js"></script>
+  <script type="text/javascript" src="js/vendors/fixto.js"></script>
+  <script type="text/javascript" src="js/vendors/video-js-5.11.0/video.js"></script>
+  <script type="text/javascript" src="js/vendors/video-hls/videojs-contrib-hls.js"></script>
+  <script type="text/javascript" src="js/VideoPlayer.class.js"></script>
+  <script type="text/javascript" src="js/chd-videoplayer.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header">
+      <img src="img/header-logo.svg" alt="Chambre de députés du grand-duché de Luxembourg">
+    </header>
+    <div id="content" class="clearfix">
+      <div id="video">
+        <div class="video-container">
+          <div class="video-fixed">
+            <video id="video-player" class="video-js vjs-default-skin vjs-big-play-centered" poster="img/video-poster.jpg" data-video-id="1">
+              <source src="http://52.58.18.77/seance.mp4/index.m3u8" type="application/x-mpegURL">
+              </video>
+            </div>
+          </div>
+          <div id="download" class="hidden">
+                      <button class="button-close"><span class="material-icons">&#xE5CD;</span></button>
+                      <div class="tabs-wrapper">
+                        <ul class="tabs-items">
+                          <li class="tabs-item tabs-selected"><a class="tabs-link" href="#tabs-download">Télécharger</a></li>
+                          <li class="tabs-item"><a class="tabs-link" href="#tabs-custom">Personnaliser</a></li>
+                        </ul>
+                        <div id="tabs-download" class="tabs-content tabs-selected">
+                          <h3 class="download-sequence_title">Question parlementaire n°2616 du 5 décembre 2016 de Monsieur Marc Angel relative au plan d'action européen de la défense, adressé à Monsieur le Premie(...)</h3>
+                        </div>
+                        <div id="tabs-custom" class="tabs-content">
+                          <div class="custom-container">
+                            <div class="custom-start">
+                              <span class="custom-start__label">A partir de</span>
+                              <button class="custom-start__button"><span class="custom-start__value">00:00:00</span><span class="material-icons">&#xE14E;</span></button>
+                            </div>
+                            <div class="custom-end">
+                              <span class="custom-end__label">jusque</span>
+                              <button class="custom-end__button"><span class="custom-end__value">37:13:41</span><span class="material-icons">&#xE14E;</span></button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="button-container">
+                          <button class="button-download button-wmv">Vidéo (wmv)</button>
+                          <button class="button-download button-mp4">Vidéo (mp4)</button>
+                          <button class="button-download button-mp3">Audio (mp3)</button>
+                        </div>
+                      </div>
+                    </div>
+          <div id="legend">
+                                <div class="legend-header">
+                                  <h2 class="legend-title">Besoin d'aide ?</h2>
+                                  <a href="#" class="button button-more button-expand-white" title="Afficher les détails de l'aide"></a>
+                                </div>
+                                <ul class="legend-list">
+                                  <li class="legend-item"><span class="legend-tip legend-play"></span> Lancer la lecture de la vidéo</li>
+                                  <li class="legend-item"><span class="legend-tip legend-stop"></span> Stopper la lecture de la vidéo</li>
+                                  <li class="legend-item"><span class="legend-tip legend-download"></span> Télécharger la vidéo</li>
+                                  <li class="legend-item"><span class="legend-tip legend-mail"></span> Envoyer la vidéo par email</li>
+                                  <li class="legend-item"><span class="legend-tip legend-share"></span> Afficher les fonctionnalités de partage</li>
+                                  <li class="legend-item"><span class="legend-tip legend-expand"></span> Afficher les détails d'un ordre du jour ou d'une discussion</li>
+                                </ul>
+                              </div>
+                              
+        </div>
+        <div id="agenda">
+          <header class="agenda-header">
+            <h1 class="header-title">
+              <a href="index.html" class="header-link" title="Recharger la page de la séance publique du 20/01/2016">Séance publique du 20/01/2016</a>
+            </h1>
+            <div class="agenda-actions">
+              <a href="#" class="button button-play" title="Lancer la lecture"></a>
+              <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+              <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+              <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+              <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+            </div>
+          </header>
+          <div class="agenda-container">
+            <section class="agenda-item" data-timecode="0" data-sequence="1">
+              <p class="agenda-point">(1: début) Point d'ordre du jour n°1</p>
+              <a class="agenda-title" href="#">Ouverture de la séance publique</a>
+              <div class="agenda-actions">
+                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+              </div>
+            </section>
+            <section class="agenda-item is-parent" data-timecode="60000" data-sequence="2">
+              <div class="mask-bottom"></div>
+              <p class="agenda-point">(2: 1 minute) Point d'ordre du jour n°2</p>
+              <a class="agenda-title" href="#">6818 - Projet de loi portant création d'une école internationale publique à Differdange - Rapporteur : Monsieur Lex Delles (10000)</a>
+              <ul class="agenda-attachments">
+                <li class="attachment-item"><span class="txt-bold">Document :</span></li>
+                <li class="attachment-item"><a class="attachment-link" href="#">Dossier Parlementaire N°6818,</a></li>
+                <li class="attachment-item"><a class="attachment-link" href="#">Dossier Parlementaire N°6819,</a></li>
+                <li class="attachment-item"><a class="attachment-link" href="#">Dossier Parlementaire N°6820</a></li>
+              </ul>
+              <div class="agenda-actions">
+                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                <a href="#" class="button button-expand" title="Afficher les détails de l'ordre du jour n°2"></a>
+                <a href="#" class="button button-collapse" title="Masquer les détails de l'ordre du jour n°2"></a>
+              </div>
+              <!-- Start second level -->
+              <div class="agenda-container">
+                <section class="agenda-item" data-timecode="60000" data-sequence="3">
+                  <a class="agenda-title" href="#">(3: 1 minute) Rapport de la Commission de l'Education nationale, de l'Enfance et de la Jeunesse</a>
+                  <p class="agenda-speaker" href="#"><span class="txt-bold">Intervenant(s):</span> Commission de l'Education nationale, de l'Enfance et de la Jeunesse; Delles Lex, Député</p>
+                  <div class="agenda-actions">
+                    <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                    <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                    <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                    <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                    <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                  </div>
+                </section>
+                <section class="agenda-item is-parent" data-timecode="120000" data-sequence="4">
+                  <div class="mask-bottom"></div>
+                  <a class="agenda-title" href="#">(4: 2 minutes) Discussion générale</a>
+                  <div class="agenda-actions">
+                    <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                    <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                    <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                    <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                    <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                    <a href="#" class="button button-expand" title="Afficher les détails de l'ordre du jour n°2"></a>
+                    <a href="#" class="button button-collapse" title="Masquer les détails de l'ordre du jour n°2"></a>
+                  </div>
+                  <!-- Start third level -->
+                  <div class="agenda-container">
+                    <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                      <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                      </div>
+                    </section>
+                    <section class="agenda-item is-parent" data-timecode="240000" data-sequence="6">
+                      <div class="mask-bottom"></div>
+                      <a class="agenda-title" href="#">(6: 4 minutes) Intervention du groupe parlementaire DP</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Berger Eugène, Député</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                        <a href="#" class="button button-expand" title="Afficher les détails de l'ordre du jour n°2"></a>
+                        <a href="#" class="button button-collapse" title="Masquer les détails de l'ordre du jour n°2"></a>
+                      </div>
+                      <!-- Start fourth level -->
+                      <div class="agenda-container">
+                        <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                          <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                          <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                          <div class="agenda-actions">
+                            <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                            <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                            <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                            <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                            <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                          </div>
+                        </section>
+                        <section class="agenda-item is-parent" data-timecode="180000" data-sequence="5">
+                          <div class="mask-bottom"></div>
+                          <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                          <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                          <div class="agenda-actions">
+                            <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                            <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                            <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                            <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                            <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                            <a href="#" class="button button-expand" title="Afficher les détails de l'ordre du jour n°2"></a>
+                            <a href="#" class="button button-collapse" title="Masquer les détails de l'ordre du jour n°2"></a>
+                          </div>
+                          <!-- Start fifth level -->
+                          <div class="agenda-container">
+                            <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                              <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                              <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                              <div class="agenda-actions">
+                                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                              </div>
+                            </section>
+                            <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                              <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                              <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                              <div class="agenda-actions">
+                                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                              </div>
+                            </section>
+                            <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                              <div class="mask-top"></div>
+                              <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                              <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                              <div class="agenda-actions">
+                                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                              </div>
+                            </section>
+                          </div>
+                        </section>
+                        <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                          <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                          <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                          <div class="agenda-actions">
+                            <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                            <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                            <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                            <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                            <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                          </div>
+                        </section>
+                        <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                          <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                          <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                          <div class="agenda-actions">
+                            <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                            <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                            <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                            <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                            <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                          </div>
+                        </section>
+                        <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                          <div class="mask-top"></div>
+                          <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                          <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                          <div class="agenda-actions">
+                            <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                            <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                            <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                            <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                            <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                          </div>
+                        </section>
+                      </div>
+                    </section>
+                    <section class="agenda-item" data-timecode="300000" data-sequence="7">
+                      <a class="agenda-title" href="#">(7: 5 minutes) Intervention du groupe parlementaire LSAP</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Burton Tess, Députée</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                      </div>
+                    </section>
+                    <section class="agenda-item" data-timecode="360000" data-sequence="8">
+                      <a class="agenda-title" href="#">(8: 6 minutes) Intervention du groupe parlementaire déi gréng</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Adam Claude, Député</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                      </div>
+                    </section>
+                    <section class="agenda-item" data-timecode="420000" data-sequence="9">
+                      <a class="agenda-title" href="#">(9: 7 minutes) Intervention de la sensibilité politique ADR</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Kartheiser Fernand, Député</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                      </div>
+                    </section>
+                    <section class="agenda-item" data-timecode="480000" data-sequence="10">
+                      <div class="mask-top"></div>
+                      <a class="agenda-title" href="#">(10: 8 minutes) Intervention de la sensibilité politique déi Lénk</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Wagner David, Député</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                      </div>
+                    </section>
+                  </div>
+                  <!-- End third level -->
+                </section>
+                <section class="agenda-item" data-timecode="600000" data-sequence="11">
+                  <a class="agenda-title" href="#">(11: 10 minutes) Prise de position du Gouvernement</a>
+                  <p class="agenda-speaker" href="#"><span class="txt-bold">Intervenant:</span> Meisch Claude, Ministre de l'Education nationale, de l'Enfance et de la Jeunesse</p>
+                  <div class="agenda-actions">
+                    <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                    <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                    <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                    <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                    <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                  </div>
+                </section>
+                <section class="agenda-item" data-timecode="1200000" data-sequence="12">
+                  <div class="mask-top"></div>
+                  <a class="agenda-title" href="#">(12: 20 minutes) Vote sur l'ensemble du projet de loi</a>
+                  <div class="agenda-actions">
+                    <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                    <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                    <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                    <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                    <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                  </div>
+                </section>
+              </div>
+              <!-- End second level -->
+            </section>
+            <section class="agenda-item" data-timecode="1800000" data-sequence="13">
+              <p class="agenda-point">(13: 30 minutes) Point d'ordre du jour n°3</p>
+              <a class="agenda-title" href="#">6938 - Dépôt d'une proposition de révision de l'article 32 paragraphe 4 de la Constitution</a>
+              <p class="agenda-speaker"><span class="txt-bold">Intervenant:</span> Bodry Alex, Député</p>
+              <ul class="agenda-attachments">
+                <li class="attachment-item"><span class="txt-bold">Document :</span></li>
+                <li class="attachment-item"><a class="attachment-link" href="#">Dossier Parlementaire N°6818</a></li>
+              </ul>
+              <div class="agenda-actions">
+                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+              </div>
+            </section>
+            <section class="agenda-item" data-timecode="3600000" data-sequence="14">
+              <p class="agenda-point">(14: 1 heure) Point d'ordre du jour n°4</p>
+              <a class="agenda-title" href="#">6863 - Projet de loi abrogeant la loi du 7 août 2002 portant création du Centre Virtuel de la Connaissance sur l'Europe - Rapporteur : Monsieur André Bauler</a>
+              <ul class="agenda-attachments">
+                <li class="attachment-item"><span class="txt-bold">Document :</span></li>
+                <li class="attachment-item"><a class="attachment-link" href="#">Dossier Parlementaire N°6818</a></li>
+              </ul>
+              <div class="agenda-actions">
+                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+              </div>
+            </section>
+            <section class="agenda-item" data-timecode="4500000" data-sequence="15">
+              <p class="agenda-point">(15: 1 heure 15) Point d'ordre du jour n°5</p>
+              <a class="agenda-title" href="#">6827 - Projet de loi modifiant la loi du 19 décembre 2014 facilitant l'échange transfrontalier d'informations concernant les infractions en matière de sécurité routière - Rapportrice : Madame Josée Lorsché</a>
+              <ul class="agenda-attachments">
+                <li class="attachment-item"><span class="txt-bold">Document :</span></li>
+                <li class="attachment-item"><a class="attachment-link" href="#">Dossier Parlementaire N°6818</a></li>
+              </ul>
+              <div class="agenda-actions">
+                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+              </div>
+            </section>
+            <section class="agenda-item" data-timecode="5400000" data-sequence="16">
+              <p class="agenda-point">(16: 1 heure 30) Point d'ordre du jour n°6</p>
+              <a class="agenda-title" href="#">6805 - Projet de loi modifiant la loi modifiée du 7 mars 1980 sur l'organisation judiciaire afin de transposer la décision 2009/426/JAI du Conseil du 16 décembre 2008 sur le renforcement d'Eurojust et modifiant la décision 2002/187/JAI instituant Eurojust afin de renforcer la lutte contre les formes graves de criminalité - Rapporteur : Monsieur Marc Angel</a>
+              <ul class="agenda-attachments">
+                <li class="attachment-item"><span class="txt-bold">Document :</span></li>
+                <li class="attachment-item"><a class="attachment-link" href="#">Dossier Parlementaire N°6818</a></li>
+              </ul>
+              <div class="agenda-actions">
+                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+              </div>
+            </section>
+            <section class="agenda-item is-parent" data-timecode="6300000" data-sequence="17">
+              <div class="mask-bottom"></div>
+              <p class="agenda-point">(17: 2 heures) Point d'ordre du jour n°7</p>
+              <a class="agenda-title" href="#">6926 - Proposition de modification du Règlement de la Chambre des Députés relative aux pétitions publiques - Rapporteur : Monsieur Gast Gibéryen</a>
+              <ul class="agenda-attachments">
+                <li class="attachment-item"><span class="txt-bold">Document :</span></li>
+                <li class="attachment-item"><a class="attachment-link" href="#">Dossier Parlementaire N°6818</a></li>
+              </ul>
+              <div class="agenda-actions">
+                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                <a href="#" class="button button-expand" title="Afficher les détails de l'ordre du jour n°2"></a>
+                <a href="#" class="button button-collapse" title="Masquer les détails de l'ordre du jour n°2"></a>
+              </div>
+          
+          
+          
+          
+          
+              <!-- Start second level -->
+              <div class="agenda-container">
+                <section class="agenda-item" data-timecode="60000" data-sequence="3">
+                  <a class="agenda-title" href="#">(3: 1 minute) Rapport de la Commission de l'Education nationale, de l'Enfance et de la Jeunesse</a>
+                  <p class="agenda-speaker" href="#"><span class="txt-bold">Intervenant(s):</span> Commission de l'Education nationale, de l'Enfance et de la Jeunesse; Delles Lex, Député</p>
+                  <div class="agenda-actions">
+                    <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                    <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                    <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                    <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                    <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                  </div>
+                </section>
+                <section class="agenda-item" data-timecode="120000" data-sequence="4">
+                  <a class="agenda-title" href="#">(4: 2 minutes) Discussion générale</a>
+                  <div class="agenda-actions">
+                    <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                    <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                    <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                    <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                    <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                  </div>
+                </section>
+                <section class="agenda-item" data-timecode="600000" data-sequence="11">
+                  <a class="agenda-title" href="#">(11: 10 minutes) Prise de position du Gouvernement</a>
+                  <p class="agenda-speaker" href="#"><span class="txt-bold">Intervenant:</span> Meisch Claude, Ministre de l'Education nationale, de l'Enfance et de la Jeunesse</p>
+                  <div class="agenda-actions">
+                    <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                    <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                    <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                    <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                    <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                  </div>
+                </section>
+                <section class="agenda-item is-parent" data-timecode="1200000" data-sequence="12">
+                  <div class="mask-top"></div>
+                  <div class="mask-bottom"></div>
+                  <a class="agenda-title" href="#">(12: 20 minutes) Vote sur l'ensemble du projet de loi</a>
+                  <div class="agenda-actions">
+                    <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                    <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                    <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                    <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                    <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                    <a href="#" class="button button-expand" title="Afficher les détails de l'ordre du jour n°2"></a>
+                    <a href="#" class="button button-collapse" title="Masquer les détails de l'ordre du jour n°2"></a>
+                  </div>
+                  <!-- Start third level -->
+                  <div class="agenda-container">
+                    <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                      <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                      </div>
+                    </section>
+                    <section class="agenda-item is-parent" data-timecode="240000" data-sequence="6">
+                      <div class="mask-bottom"></div>
+                      <a class="agenda-title" href="#">(6: 4 minutes) Intervention du groupe parlementaire DP</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Berger Eugène, Député</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                        <a href="#" class="button button-expand" title="Afficher les détails de l'ordre du jour n°2"></a>
+                        <a href="#" class="button button-collapse" title="Masquer les détails de l'ordre du jour n°2"></a>
+                      </div>
+                      <!-- Start fourth level -->
+                      <div class="agenda-container">
+                        <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                          <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                          <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                          <div class="agenda-actions">
+                            <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                            <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                            <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                            <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                            <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                          </div>
+                        </section>
+                        <section class="agenda-item is-parent" data-timecode="180000" data-sequence="5">
+                          <div class="mask-bottom"></div>
+                          <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                          <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                          <div class="agenda-actions">
+                            <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                            <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                            <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                            <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                            <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                            <a href="#" class="button button-expand" title="Afficher les détails de l'ordre du jour n°2"></a>
+                            <a href="#" class="button button-collapse" title="Masquer les détails de l'ordre du jour n°2"></a>
+                          </div>
+                          <!-- Start fifth level -->
+                          <div class="agenda-container">
+                            <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                              <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                              <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                              <div class="agenda-actions">
+                                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                              </div>
+                            </section>
+                            <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                              <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                              <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                              <div class="agenda-actions">
+                                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                              </div>
+                            </section>
+                            <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                              <div class="mask-top"></div>
+                              <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                              <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                              <div class="agenda-actions">
+                                <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                                <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                                <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                                <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                                <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                              </div>
+                            </section>
+                          </div>
+                        </section>
+                        <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                          <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                          <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                          <div class="agenda-actions">
+                            <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                            <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                            <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                            <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                            <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                          </div>
+                        </section>
+                        <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                          <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                          <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                          <div class="agenda-actions">
+                            <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                            <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                            <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                            <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                            <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                          </div>
+                        </section>
+                        <section class="agenda-item" data-timecode="180000" data-sequence="5">
+                          <div class="mask-top"></div>
+                          <a class="agenda-title" href="#">(5: 3 minutes) Intervention du groupe parlementaire CSV</a>
+                          <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Hansen Martine, Députée</p>
+                          <div class="agenda-actions">
+                            <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                            <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                            <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                            <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                            <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                          </div>
+                        </section>
+                      </div>
+                    </section>
+                    <section class="agenda-item" data-timecode="300000" data-sequence="7">
+                      <a class="agenda-title" href="#">(7: 5 minutes) Intervention du groupe parlementaire LSAP</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Burton Tess, Députée</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                      </div>
+                    </section>
+                    <section class="agenda-item" data-timecode="360000" data-sequence="8">
+                      <a class="agenda-title" href="#">(8: 6 minutes) Intervention du groupe parlementaire déi gréng</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Adam Claude, Député</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                      </div>
+                    </section>
+                    <section class="agenda-item" data-timecode="420000" data-sequence="9">
+                      <a class="agenda-title" href="#">(9: 7 minutes) Intervention de la sensibilité politique ADR</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Kartheiser Fernand, Député</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                      </div>
+                    </section>
+                    <section class="agenda-item" data-timecode="480000" data-sequence="10">
+                      <div class="mask-top"></div>
+                      <a class="agenda-title" href="#">(10: 8 minutes) Intervention de la sensibilité politique déi Lénk</a>
+                      <p class="agenda-speaker"><span class="txt-bold">Intervenant(s):</span> Wagner David, Député</p>
+                      <div class="agenda-actions">
+                        <a href="#" class="button button-play" title="Lancer la lecture"></a>
+                        <a href="#" class="button button-stop" title="Arreter la lecture"></a>
+                        <a href="#" class="button button-download" title="Télécharger la vidéo"></a>
+                        <a href="#" class="button button-mail" title="Envoyer la séquence par email"></a>
+                        <a href="#" class="button button-share" title="Afficher les fonctionnalités de partage"></a>
+                      </div>
+                    </section>
+                  </div>
+                  <!-- End third level -->
+                </section>
+              </div>
+              <!-- End second level -->
+            </section>
+            <!-- End first level -->
+          </div>
+          
+        </div>
+      </div>
+      <footer id="footer">
+        <p>© <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script> Chambre des Députés</p>
+      </footer>
+    </div>
+    <!-- Sharebox -->
+    <div id="sharebox" class="modal blur-effect">
+      <div class="popup-content">
+        <div class="tabs-wrapper">
+          <ul class="tabs-items">
+            <li class="tabs-item tabs-selected"><a class="tabs-link" href="#tabs-social">Social</a></li>
+            <li class="tabs-item"><a class="tabs-link" href="#tabs-download">Télécharger</a></li>
+            <li class="tabs-item"><a class="tabs-link" href="#tabs-code">Intégrer</a></li>
+          </ul>
+          <div id="tabs-social" class="tabs-content tabs-selected">
+            <ul class="share-buttons">
+              <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.chd.lu%2Fwps%2Fportal%2Fpublic%2Faccueil%2Factualite%2F!ut%2Fp%2Fb1%2F04_SjzQ0Nze0NDK2MLPUj9CPykssy0xPLMnMz0vMAfGjzOJdjFzCgjxNjAz8XYPNDIyMA4wdg4KNDAwMTIAKIoEKDHAARwNC-v088nNT9XOjciwAmD14gA!!%2Fdl4%2Fd5%2FL2dBISEvZ0FBIS9nQSEh%2F&t=Chambre%20des%20D%C3%A9put%C3%A9s%20du%20Grand-Duch%C3%A9%20de%20Luxembourg" title="Share on Facebook" target="_blank"><img src="./img/facebook.png" alt="Share on facebook"> Share on Facebook</a></li>
+              <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fwww.chd.lu%2Fwps%2Fportal%2Fpublic%2Faccueil%2Factualite%2F!ut%2Fp%2Fb1%2F04_SjzQ0Nze0NDK2MLPUj9CPykssy0xPLMnMz0vMAfGjzOJdjFzCgjxNjAz8XYPNDIyMA4wdg4KNDAwMTIAKIoEKDHAARwNC-v088nNT9XOjciwAmD14gA!!%2Fdl4%2Fd5%2FL2dBISEvZ0FBIS9nQSEh%2F&text=Chambre%20des%20D%C3%A9put%C3%A9s%20du%20Grand-Duch%C3%A9%20de%20Luxembourg:%20http%3A%2F%2Fwww.chd.lu%2Fwps%2Fportal%2Fpublic%2Faccueil%2Factualite%2F!ut%2Fp%2Fb1%2F04_SjzQ0Nze0NDK2MLPUj9CPykssy0xPLMnMz0vMAfGjzOJdjFzCgjxNjAz8XYPNDIyMA4wdg4KNDAwMTIAKIoEKDHAARwNC-v088nNT9XOjciwAmD14gA!!%2Fdl4%2Fd5%2FL2dBISEvZ0FBIS9nQSEh%2F" target="_blank" title="Tweet"><img src="./img/twitter.png" alt="Share on Twitter"> Share on Twitter</a></li>
+            </ul>
+            <div class="button-group align-right">
+              <a href="#" class="button button-blue button-close" title="Fermer les fonctionnalités de partage">Fermer</a>
+            </div>
+          </div>
+          <div id="tabs-download" class="tabs-content">
+            <ul>
+              <li><a href="#"><span class="material-icons">videocam</span>Télécharger au format vidéo wmv</a></li>
+              <li><a href="#"><span class="material-icons">videocam</span>Télécharger au format vidéo mp4</a></li>
+              <li><a href="#"><span class="material-icons">volume_up</span>Télécharger au format audio mp3</a></li>
+            </ul>
+            <div class="button-group align-right">
+              <a href="#" class="button button-blue button-close" title="Fermer les fonctionnalités de partage">Fermer</a>
+            </div>
+          </div>
+          <div id="tabs-code" class="tabs-content">
+            <textarea name="code-integration" id="code-integration" cols="30" rows="10" onclick="this.focus();this.select()" readonly="readonly">test test test</textarea>
+            <div class="button-group align-right">
+              <a href="#" class="button button-blue button-close" title="Fermer les fonctionnalités de partage">Fermer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </body>
+  </html>

@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// Agenda item playing
+// -----------------------------------------------------------------------------
+
+.agenda-playing {
+
+  & > .agenda-actions .button-play {
+    display: none;
+  }
+
+  & > .agenda-actions .button-stop {
+    display: inline-block;
+  }
+
+}

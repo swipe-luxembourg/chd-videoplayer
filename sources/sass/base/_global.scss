@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// Global
+// -----------------------------------------------------------------------------
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: $chd-darkbrown;
+  background: $chd-lightgrey;
+}
+
+a {
+  color: $chd-darkbrown;
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+::-webkit-media-controls,
+::-webkit-media-controls-enclosure,
+::-webkit-media-controls-panel,
+::-webkit-media-controls-panel-container,
+::-webkit-media-controls-start-playback-button {
+  display:none !important;
+  -webkit-appearance: none !important;
+  visibility: hidden !important;
+}
+
+.embedded .video-container {
+  padding: 0;
+}
+.embedded {
+  background: transparent;
+  /* initial does not work on win8 - ie10 */
+}
+.embedded #agenda {
+  display: none;
+}
+.embedded .video-js {
+  background-color: transparent;
+}
+.embedded .vjs-poster {
+  background-color: transparent;
+}

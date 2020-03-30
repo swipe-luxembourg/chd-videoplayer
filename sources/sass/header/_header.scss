@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// Header
+// -----------------------------------------------------------------------------
+
+#header {
+  position: relative;
+  border-bottom: 1px solid #646363;
+  height: 60px;
+  background: image('header-bg.png') left bottom repeat-x #fff;
+  background-size: 70px 75px;
+
+  img {
+    margin: 5px 10px;
+    height: 50px;
+  }
+
+  @media (max-width : $medium-max-size) {
+    height: 55px;
+    img {
+      height: 45px;
+    }
+  }
+}
+
+.svg #header {
+  background-image: image('header-bg.svg');
+}

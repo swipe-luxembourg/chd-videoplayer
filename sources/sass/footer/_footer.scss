@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// Footer
+// -----------------------------------------------------------------------------
+
+#footer {
+  padding: 0 10px;
+  line-height: 40px;
+  background: linear-gradient(to bottom, $chd-mediumbrown 0%, $chd-darkbrown 100%);
+  p {
+    color: $chd-lightbrown;
+  }
+}

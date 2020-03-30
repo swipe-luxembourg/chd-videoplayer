@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// Agenda item actions
+// -----------------------------------------------------------------------------
+
+.agenda-actions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0;
+  text-align: right;
+
+  .button {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    background-color: $action-base;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    transition: all 0.2s;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    .material-icons {
+      font-size: 14px;
+      line-height: 26px;
+      color: #333;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .button-stop {
+    display: none;
+    border-color: $chd-lightred;
+
+    .material-icons {
+      color: $chd-lightred;
+    }
+  }
+
+  .button-expand,
+  .button-collapse {
+    margin-left: 20px;
+    background-color: $action-base;
+  }
+
+  .button-expand {
+    display: inline-block;
+  }
+
+  .button-collapse {
+    display: none;
+  }
+
+}
+
+@media (max-width : $small-max-size) {
+
+  .agenda-actions {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    .button {
+      margin: 20px 0 0 10px;
+      width: 32px;
+      height: 32px;
+
+      .material-icons {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+    }
+
+    .button-expand,
+    .button-collapse {
+      margin-left: 10px;
+    }
+
+  }
+
+}

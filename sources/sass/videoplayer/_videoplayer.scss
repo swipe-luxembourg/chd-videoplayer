@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// Video player
+// -----------------------------------------------------------------------------
+
+#video {
+  z-index: 1000;
+}
+
+// Responsive video CSS
+.video-fixed {
+  position: relative;
+  padding-bottom: 56.8181818182%; /* Valeur adaptée à la vidéo de test */
+  /* padding-bottom: 56.25%; */ /* 16:9  900 / (1600 / 100) = 56.25% */
+  height: 0;
+  width: 100%;
+
+  #video-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.video-container {
+  padding: 10px 10px 0 10px;
+
+  @media (max-width : $medium-max-size) {
+    padding: 0;
+    background: #efefef;
+  }
+
+}

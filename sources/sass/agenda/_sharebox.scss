@@ -1,0 +1,149 @@
+// Sharebox
+// -----------------------------------------------------------------------------
+
+.popup-content {
+  padding: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  max-width: 630px;
+  min-width: 320px;
+  height: auto;
+  z-index: 2000;
+  visibility: hidden;
+  background: #fff;
+  backface-visibility: hidden;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,1);
+}
+
+.show {
+  visibility: visible;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.show ~ .overlay {
+  opacity: 0.8;
+  visibility: visible;
+}
+
+// Tabs
+// -----------------------------------------------------------------------------
+.tabs-wrapper {
+
+  .tabs-items {
+    font-size: 0;
+    text-align: left;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .tabs-item {
+    display: inline-block;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .tabs-link {
+    display: block;
+    margin-bottom: -1px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #999;
+  }
+
+  .tabs-item.tabs-selected .tabs-link {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #CD2A2A;
+  }
+
+  .tabs-content {
+    display: none;
+    padding-top: 10px;
+  }
+
+  .tabs-content.tabs-selected {
+    display: block;
+  }
+
+  .button-group {
+    margin-top: 50px;
+    border-top: 1px solid #efefef;
+  }
+}
+
+.touchevents {
+  a[href^='#tabs-download'],
+  a[href^='#tabs-code'] {
+    display: none;
+  }
+}
+
+#tabs-download {
+  li a {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #666;
+
+    .material-icons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 13px;
+      color: #666;
+    }
+  }
+}
+
+#tabs-code {
+  textarea {
+    margin-top: 20px;
+    border: 1px solid #efefef;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    background: #fafafa;
+    font-size: 13px;
+  }
+}
+
+#tabs-social {
+  .share-buttons {
+    a {
+      display: block;
+      margin-top: 10px;
+      height: 32px;
+      line-height: 32px;
+      font-size: 14px;
+
+      img {
+        float: left;
+        margin-right: 10px;
+      }
+    }
+  }
+}

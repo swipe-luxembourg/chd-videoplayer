@@ -1,0 +1,59 @@
+// Small
+// -------------------------------------------------------------------------------------------------
+@media (max-width : $small-max-size) {
+  #header {
+    width: 100%;
+  }
+  #video {
+    float: left;
+    width: 100%;
+  }
+  #agenda {
+    float: left;
+    width: 100%;
+  }
+  #footer {
+    width: 100%;
+    height: 40px;
+  }
+}
+
+// Medium
+// -------------------------------------------------------------------------------------------------
+@media (min-width : $medium-min-size) and (max-width : $medium-max-size) {
+  #header {
+    width: 100%;
+  }
+  #video {
+    float: left;
+    width: 100%;
+  }
+  #agenda {
+    float: left;
+    width: 100%;
+  }
+  #footer {
+    width: 100%;
+    height: 40px;
+  }
+}
+
+// Large
+// -------------------------------------------------------------------------------------------------
+@media (min-width : $large-min-size) {
+  #header {
+    width: 100%;
+  }
+  #video {
+    float: left;
+    width: 45%;
+  }
+  #agenda {
+    float: left;
+    width: 55%;
+  }
+  #footer {
+    width: 100%;
+    height: 40px;
+  }
+}

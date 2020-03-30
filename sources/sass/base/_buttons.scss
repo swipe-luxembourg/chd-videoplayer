@@ -1,0 +1,136 @@
+// -----------------------------------------------------------------------------
+// Buttons
+// -----------------------------------------------------------------------------
+
+.button-group {
+  font-size: 0;
+
+  &.align-left {
+    text-align: left;
+
+    .button {
+      margin-right: 20px;
+    }
+  }
+
+  &.align-right {
+    text-align: right;
+
+    .button {
+      margin-left: 20px;
+    }
+  }
+
+  &.align-center {
+    text-align: center;
+
+    .button {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 0 40px;
+    border: 0 none;
+    min-width: 120px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+
+    @media (max-width : $small-max-size) {
+      padding: 0 20px;
+    }
+  }
+
+  .button:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .button:active {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .button-grey {
+    color: #999;
+    border-color: #efefef;
+    background-color: #fafafa;
+  }
+
+  .button-blue {
+    color: #fff;
+    border-color: #4799D7;
+    background-color: #51B2FB;
+  }
+
+  .button.is-deactivated,
+  .button.is-deactivated:hover,
+  .button.is-deactivated:active {
+    border: 0 none;
+    color: #999;
+    background-color: #ccc;
+    cursor: default;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+}
+
+.button {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-play {
+  background-image: url(../img/icons/play_arrow-black-18dp/2x/baseline_play_arrow_black_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-stop {
+  background-image: url(../img/icons/stop-black-18dp/2x/baseline_stop_black_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-download {
+  background-image: url(../img/icons/get_app-black-18dp/2x/baseline_get_app_black_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-mail {
+  background-image: url(../img/icons/mail_outline-black-18dp/2x/baseline_mail_outline_black_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-share {
+  background-image: url(../img/icons/share-black-18dp/2x/baseline_share_black_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-expand {
+  background-image: url(../img/icons/expand_more-black-18dp/2x/baseline_expand_more_black_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-collapse {
+  background-image: url(../img/icons/expand_less-black-18dp/2x/baseline_expand_less_black_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-expand-white {
+  background-image: url(../img/icons/expand_more-white-18dp/2x/baseline_expand_more_white_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-collapse-white {
+  background-image: url(../img/icons/expand_less-white-18dp/2x/baseline_expand_less_white_18dp.png);
+  background-size: 16px auto;
+}
