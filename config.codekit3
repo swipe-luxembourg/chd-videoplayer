@@ -1762,7 +1762,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ron",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 607184523.14822197
+	"lastBuiltDate": 607269726.38740897
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -3241,7 +3241,7 @@
 		},
 	"esLintSourceType": 0,
 	"externalServerAddress": "http://localhost:8888",
-	"gitIgnoreBuildFolder": 1,
+	"gitIgnoreBuildFolder": 0,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
