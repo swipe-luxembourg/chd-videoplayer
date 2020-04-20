@@ -89,6 +89,10 @@
   .button-group {
     margin-top: 50px;
     border-top: 1px solid #efefef;
+
+    .button-close {
+      background-image: none;
+    }
   }
 }
 

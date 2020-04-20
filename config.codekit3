@@ -7,7 +7,7 @@
 		"uuidString": "E5249369-116D-456A-BD6C-A1A39D2799F3"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "32001",
 "files": {
 	"/build": {
 		"ft": 65536,
@@ -495,6 +495,81 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/sources/img/icons/audiotrack-black-18dp.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/img/icons/audiotrack-black-18dp.svg",
+		"oF": 1,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/sources/img/icons/audiotrack-black-18dp/1x/baseline_audiotrack_black_18dp.png": {
+		"ft": 32768,
+		"iS": 155,
+		"oA": 2,
+		"oAP": "/build/img/icons/audiotrack-black-18dp/1x/baseline_audiotrack_black_18dp.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/sources/img/icons/audiotrack-black-18dp/2x/baseline_audiotrack_black_18dp.png": {
+		"ft": 32768,
+		"iS": 222,
+		"oA": 2,
+		"oAP": "/build/img/icons/audiotrack-black-18dp/2x/baseline_audiotrack_black_18dp.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sources/img/icons/close-black-18dp.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/img/icons/close-black-18dp.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/sources/img/icons/close-black-18dp/1x/baseline_close_black_18dp.png": {
+		"ft": 32768,
+		"iS": 149,
+		"oA": 0,
+		"oAP": "/build/img/icons/close-black-18dp/1x/baseline_close_black_18dp.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sources/img/icons/close-black-18dp/2x/baseline_close_black_18dp.png": {
+		"ft": 32768,
+		"iS": 209,
+		"oA": 0,
+		"oAP": "/build/img/icons/close-black-18dp/2x/baseline_close_black_18dp.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sources/img/icons/content-cut.png": {
+		"ft": 32768,
+		"iS": 527,
+		"oA": 0,
+		"oAP": "/build/img/icons/content-cut.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/sources/img/icons/expand_less-black-18dp.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -532,7 +607,7 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/build/img/icons/expand_less-white-18dp.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -540,9 +615,9 @@
 	"/sources/img/icons/expand_less-white-18dp/1x/baseline_expand_less_white_18dp.png": {
 		"ft": 32768,
 		"iS": 120,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/build/img/icons/expand_less-white-18dp/1x/baseline_expand_less_white_18dp.png",
-		"oF": 0,
+		"oF": 1,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -551,9 +626,9 @@
 	"/sources/img/icons/expand_less-white-18dp/2x/baseline_expand_less_white_18dp.png": {
 		"ft": 32768,
 		"iS": 158,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/build/img/icons/expand_less-white-18dp/2x/baseline_expand_less_white_18dp.png",
-		"oF": 0,
+		"oF": 1,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -596,7 +671,7 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/build/img/icons/expand_more-white-18dp.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
@@ -604,9 +679,9 @@
 	"/sources/img/icons/expand_more-white-18dp/1x/baseline_expand_more_white_18dp.png": {
 		"ft": 32768,
 		"iS": 118,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/build/img/icons/expand_more-white-18dp/1x/baseline_expand_more_white_18dp.png",
-		"oF": 0,
+		"oF": 1,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -615,9 +690,9 @@
 	"/sources/img/icons/expand_more-white-18dp/2x/baseline_expand_more_white_18dp.png": {
 		"ft": 32768,
 		"iS": 150,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/build/img/icons/expand_more-white-18dp/2x/baseline_expand_more_white_18dp.png",
-		"oF": 0,
+		"oF": 1,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
@@ -681,6 +756,38 @@
 		"iS": 294,
 		"oA": 2,
 		"oAP": "/build/img/icons/mail_outline-black-18dp/2x/baseline_mail_outline_black_18dp.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sources/img/icons/movie-black-18dp.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/img/icons/movie-black-18dp.svg",
+		"oF": 1,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/sources/img/icons/movie-black-18dp/1x/baseline_movie_black_18dp.png": {
+		"ft": 32768,
+		"iS": 148,
+		"oA": 2,
+		"oAP": "/build/img/icons/movie-black-18dp/1x/baseline_movie_black_18dp.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/sources/img/icons/movie-black-18dp/2x/baseline_movie_black_18dp.png": {
+		"ft": 32768,
+		"iS": 191,
+		"oA": 2,
+		"oAP": "/build/img/icons/movie-black-18dp/2x/baseline_movie_black_18dp.png",
 		"oF": 1,
 		"oIPL": 0,
 		"opt": 1,
@@ -1463,19 +1570,6 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"/sources/sass/_integration.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/build/css/_integration.css",
-		"oF": 0,
-		"oS": 1,
-		"uL": 1
-		},
 	"/sources/sass/agenda/_agenda-header.scss": {
 		"aP": 1,
 		"bl": 1,
@@ -1619,19 +1713,6 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"/sources/sass/base/_icons.scss": {
-		"aP": 1,
-		"bl": 1,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/build/css/_icons.css",
-		"oF": 0,
-		"oS": 1,
-		"uL": 1
-		},
 	"/sources/sass/base/_mixins.scss": {
 		"aP": 1,
 		"bl": 1,
@@ -1710,6 +1791,19 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"/sources/sass/fixes/_fixes.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/css/_fixes.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
 	"/sources/sass/footer/_footer.scss": {
 		"aP": 1,
 		"bl": 1,
@@ -1732,6 +1826,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/css/_header.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"/sources/sass/videoplayer/_download.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/css/_download.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
@@ -1773,7 +1880,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ron",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 607269726.38740897
+	"lastBuiltDate": 609087066.01282501
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2369,6 +2476,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
+			},
 		"guard-for-in": {
 			"active": 0,
 			"optionString": ""
@@ -2545,6 +2656,10 @@
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-continue": {
 			"active": 0,
 			"optionString": ""
@@ -2570,6 +2685,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -2873,6 +2992,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-setter-return": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-shadow": {
 			"active": 0,
 			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
@@ -3076,6 +3199,10 @@
 		"prefer-destructuring": {
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-named-capture-group": {
 			"active": 0,

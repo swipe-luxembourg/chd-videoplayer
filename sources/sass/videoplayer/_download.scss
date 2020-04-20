@@ -1,7 +1,3 @@
-// -----------------------------------------------------------------------------
-// Integration
-// -----------------------------------------------------------------------------
-
 #download {
   position: relative;
   margin: 0 10px;
@@ -18,9 +14,14 @@
     position: absolute;
     top: 10px;
     right: 10px;
+    width: 24px;
+    height: 24px;
     border: 0 none;
-    background: transparent;
     cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-color: #fff;
   }
 
   .download-sequence_title {
@@ -64,23 +65,23 @@
     background-repeat: no-repeat;
     background-color: #fff;
 
-
-
     // Small screens
     @media (max-width : $small-max-size) {
       margin: 5px 0 0 0;
     }
 
-    .material-icons {
+    &:after {
+      content: '';
       position: absolute;
-      height: 100%;
       top: 0;
       right: 0;
-      background: #efefef;
-      padding: 7px 0;
-      width: 30px;
-      text-align: center;
-      font-size: 16px;
+      width: 33px;
+      height: 33px;
+      background-image: url(../img/icons/content-cut.png);
+      background-size: 16px auto;
+      background-color: $action-base;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 
@@ -93,7 +94,9 @@
     }
   }
 
-  .button-download {
+  .button-wmv,
+  .button-mp4,
+  .button-mp3 {
     display: inline-block;
     margin: 20px 10px 0 0;
     padding: 10px 15px 10px 35px;
@@ -121,18 +124,6 @@
 
     &:active {
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-    }
-
-    &.button-wmv {
-      background-image: url(../img/button-icon-wmv.png);
-    }
-
-    &.button-mp4 {
-      background-image: url(../img/button-icon-mp4.png);
-    }
-
-    &.button-mp3 {
-      background-image: url(../img/button-icon-mp3.png);
     }
 
   }

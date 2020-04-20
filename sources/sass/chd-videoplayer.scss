@@ -13,6 +13,7 @@
 @import 'content/content';
 
 @import 'videoplayer/videoplayer';
+@import 'videoplayer/download';
 @import 'videoplayer/legend';
 
 @import 'agenda/agenda';
@@ -26,4 +27,4 @@
 
 @import 'footer/footer';
 
-@import 'integration';
+@import 'fixes/fixes.scss';

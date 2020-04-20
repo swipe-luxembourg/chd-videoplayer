@@ -280,6 +280,26 @@ html {
   background-size: 16px auto;
 }
 
+.button-wmv {
+  background-image: url(../img/icons/movie-black-18dp/2x/baseline_movie_black_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-mp4 {
+  background-image: url(../img/icons/movie-black-18dp/2x/baseline_movie_black_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-mp3 {
+  background-image: url(../img/icons/audiotrack-black-18dp/2x/baseline_audiotrack_black_18dp.png);
+  background-size: 16px auto;
+}
+
+.button-close {
+  background-image: url(../img/icons/close-black-18dp/2x/baseline_close_black_18dp.png);
+  background-size: 16px auto;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
 }
@@ -302,37 +322,6 @@ a {
 
 .hidden {
   display: none;
-}
-
-::-webkit-media-controls,
-::-webkit-media-controls-enclosure,
-::-webkit-media-controls-panel,
-::-webkit-media-controls-panel-container,
-::-webkit-media-controls-start-playback-button {
-  display: none !important;
-  -webkit-appearance: none !important;
-  visibility: hidden !important;
-}
-
-.embedded .video-container {
-  padding: 0;
-}
-
-.embedded {
-  background: transparent;
-  /* initial does not work on win8 - ie10 */
-}
-
-.embedded #agenda {
-  display: none;
-}
-
-.embedded .video-js {
-  background-color: transparent;
-}
-
-.embedded .vjs-poster {
-  background-color: transparent;
 }
 
 #header {
@@ -396,6 +385,150 @@ a {
     padding: 0;
     background: #efefef;
   }
+}
+
+#download {
+  position: relative;
+  margin: 0 10px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  #download {
+    margin: 0;
+  }
+}
+
+#download .button-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border: 0 none;
+  cursor: pointer;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-color: #fff;
+}
+
+#download .download-sequence_title {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+#download .custom-container {
+  margin-top: 10px;
+}
+
+#download .custom-start, #download .custom-end {
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+  #download .custom-start, #download .custom-end {
+    margin-right: 0 0 0 20px;
+  }
+}
+
+#download .custom-start__label, #download .custom-end__label {
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  #download .custom-start__label, #download .custom-end__label {
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+#download .custom-start__button, #download .custom-end__button {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 45px 10px 15px;
+  border: 1px solid #efefef;
+  text-align: left;
+  cursor: pointer;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+@media (max-width: 767px) {
+  #download .custom-start__button, #download .custom-end__button {
+    margin: 5px 0 0 0;
+  }
+}
+
+#download .custom-start__button:after, #download .custom-end__button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 33px;
+  height: 33px;
+  background-image: url(../img/icons/content-cut.png);
+  background-size: 16px auto;
+  background-color: #d8d8d8;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#download .button-container {
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  #download .button-container {
+    margin-top: 20px;
+  }
+}
+
+#download .button-wmv,
+#download .button-mp4,
+#download .button-mp3 {
+  display: inline-block;
+  margin: 20px 10px 0 0;
+  padding: 10px 15px 10px 35px;
+  border: 0 none;
+  text-align: center;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+  cursor: pointer;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-color: #d8d8d8;
+}
+
+#download .button-wmv:last-child,
+#download .button-mp4:last-child,
+#download .button-mp3:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 767px) {
+  #download .button-wmv,
+#download .button-mp4,
+#download .button-mp3 {
+    margin-top: 15px;
+  }
+}
+
+#download .button-wmv:hover,
+#download .button-mp4:hover,
+#download .button-mp3:hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+#download .button-wmv:active,
+#download .button-mp4:active,
+#download .button-mp3:active {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 #legend {
@@ -846,7 +979,7 @@ a {
     line-height: 32px;
   }
   .agenda-actions .button-expand,
-  .agenda-actions .button-collapse {
+.agenda-actions .button-collapse {
     margin-left: 10px;
   }
 }
@@ -1039,6 +1172,10 @@ a {
   border-top: 1px solid #efefef;
 }
 
+.tabs-wrapper .button-group .button-close {
+  background-image: none;
+}
+
 .touchevents a[href^='#tabs-download'],
 .touchevents a[href^='#tabs-code'] {
   display: none;
@@ -1095,143 +1232,87 @@ a {
   color: #e2dfce;
 }
 
-#download {
-  position: relative;
-  margin: 0 10px;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+::-webkit-media-controls,
+::-webkit-media-controls-enclosure,
+::-webkit-media-controls-panel,
+::-webkit-media-controls-panel-container,
+::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none !important;
+  visibility: hidden !important;
 }
 
-@media (max-width: 767px) {
-  #download {
-    margin: 0;
-  }
+.embedded .video-container {
+  padding: 0;
 }
 
-#download .button-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: 0 none;
+.embedded {
   background: transparent;
+  /* initial does not work on win8 - ie10 */
+}
+
+.embedded #agenda {
+  display: none;
+}
+
+.embedded .video-js {
+  background-color: transparent;
+}
+
+.embedded .vjs-poster {
+  background-color: transparent;
+}
+
+video {
+  pointer-events: none;
+}
+
+#code-integration {
+  margin-bottom: -38px;
+}
+
+/* EMBEDDED VIDEO */
+.embedded .video-container {
+  padding: 0;
+}
+
+.embedded {
+  background: transparent;
+  /* initial does not work on win8 - ie10 */
+}
+
+.embedded #agenda {
+  display: none;
+  width: 0;
+}
+
+.embedded .video-js {
+  background-color: transparent;
+}
+
+.embedded .vjs-poster {
+  background-color: transparent;
+}
+
+.embedded #video {
+  width: 100%;
+}
+
+.embedded #content {
+  padding-bottom: 0;
+}
+
+/* OPEN OUTSIDE */
+.vjs-custom-button {
+  font-size: 1.54em;
+  line-height: 1.67em;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
-#download .download-sequence_title {
-  margin-top: 10px;
-  font-size: 13px;
-  line-height: 1.5;
-}
-
-#download .custom-container {
-  margin-top: 10px;
-}
-
-#download .custom-start, #download .custom-end {
-  display: inline-block;
-}
-
-@media (max-width: 767px) {
-  #download .custom-start, #download .custom-end {
-    margin-right: 0 0 0 20px;
-  }
-}
-
-#download .custom-start__label, #download .custom-end__label {
-  font-size: 12px;
-}
-
-@media (max-width: 767px) {
-  #download .custom-start__label, #download .custom-end__label {
-    margin-top: 10px;
-    display: block;
-  }
-}
-
-#download .custom-start__button, #download .custom-end__button {
-  position: relative;
-  display: inline-block;
-  margin: 0 10px;
-  padding: 10px 45px 10px 15px;
-  border: 1px solid #efefef;
-  text-align: left;
-  cursor: pointer;
-  background-position: 10px center;
-  background-repeat: no-repeat;
-  background-color: #fff;
-}
-
-@media (max-width: 767px) {
-  #download .custom-start__button, #download .custom-end__button {
-    margin: 5px 0 0 0;
-  }
-}
-
-#download .custom-start__button .material-icons, #download .custom-end__button .material-icons {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  right: 0;
-  background: #efefef;
-  padding: 7px 0;
-  width: 30px;
-  text-align: center;
-  font-size: 16px;
-}
-
-#download .button-container {
-  margin-top: 10px;
-}
-
-@media (max-width: 767px) {
-  #download .button-container {
-    margin-top: 20px;
-  }
-}
-
-#download .button-download {
-  display: inline-block;
-  margin: 20px 10px 0 0;
-  padding: 10px 15px 10px 35px;
-  border: 0 none;
-  text-align: center;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
-  transition: all 0.2s;
-  cursor: pointer;
-  background-position: 10px center;
-  background-repeat: no-repeat;
-  background-color: #d8d8d8;
-}
-
-#download .button-download:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 767px) {
-  #download .button-download {
-    margin-top: 15px;
-  }
-}
-
-#download .button-download:hover {
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
-}
-
-#download .button-download:active {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-}
-
-#download .button-download.button-wmv {
-  background-image: url(../img/button-icon-wmv.png);
-}
-
-#download .button-download.button-mp4 {
-  background-image: url(../img/button-icon-mp4.png);
-}
-
-#download .button-download.button-mp3 {
-  background-image: url(../img/button-icon-mp3.png);
+.vjs-custom-button:hover {
+  text-shadow: 0em 0em 1em white;
 }
 
 /*# sourceMappingURL=chd-videoplayer.css.map */

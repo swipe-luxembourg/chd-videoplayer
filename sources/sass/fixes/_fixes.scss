@@ -1,0 +1,80 @@
+::-webkit-media-controls,
+::-webkit-media-controls-enclosure,
+::-webkit-media-controls-panel,
+::-webkit-media-controls-panel-container,
+::-webkit-media-controls-start-playback-button {
+  display:none !important;
+  -webkit-appearance: none !important;
+  visibility: hidden !important;
+}
+
+.embedded .video-container {
+  padding: 0;
+}
+.embedded {
+  background: transparent;
+  /* initial does not work on win8 - ie10 */
+}
+.embedded #agenda {
+  display: none;
+}
+.embedded .video-js {
+  background-color: transparent;
+}
+.embedded .vjs-poster {
+  background-color: transparent;
+}
+
+video {
+	pointer-events: none;
+}
+
+#code-integration {
+	margin-bottom: -38px;
+}
+
+/* EMBEDDED VIDEO */
+
+.embedded .video-container {
+	padding: 0;
+}
+
+.embedded {
+	background: transparent;
+	/* initial does not work on win8 - ie10 */
+}
+
+.embedded #agenda {
+	display: none;
+	width: 0;
+}
+
+.embedded .video-js {
+	background-color: transparent;
+}
+
+.embedded .vjs-poster {
+	background-color: transparent;
+}
+
+.embedded #video {
+	width: 100%;
+}
+
+.embedded #content {
+	padding-bottom: 0;
+}
+
+/* OPEN OUTSIDE */
+
+.vjs-custom-button {
+	font-size: 1.54em;
+	line-height: 1.67em;
+	cursor: pointer;
+	width: auto;
+	height: auto;
+}
+
+.vjs-custom-button:hover {
+	text-shadow: 0em 0em 1em white;
+}
