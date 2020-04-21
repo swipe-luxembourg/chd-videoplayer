@@ -245,6 +245,11 @@ html {
   background-size: 16px auto;
 }
 
+.button-stop-red {
+  background-image: url(../img/icons/stop-red-18dp/2x/baseline_stop_red_18dp.png);
+  background-size: 16px auto;
+}
+
 .button-download {
   background-image: url(../img/icons/get_app-black-18dp/2x/baseline_get_app_black_18dp.png);
   background-size: 16px auto;
@@ -926,12 +931,6 @@ a {
   margin: 0;
 }
 
-.agenda-actions .button .material-icons {
-  font-size: 14px;
-  line-height: 26px;
-  color: #333;
-}
-
 .agenda-actions .button:hover {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
 }
@@ -940,13 +939,8 @@ a {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-.agenda-actions .button-stop {
+.agenda-actions .button-stop-red {
   display: none;
-  border-color: #a71a38;
-}
-
-.agenda-actions .button-stop .material-icons {
-  color: #a71a38;
 }
 
 .agenda-actions .button-expand,
@@ -1082,7 +1076,7 @@ a {
   display: none;
 }
 
-.agenda-playing > .agenda-actions .button-stop {
+.agenda-playing > .agenda-actions .button-stop-red {
   display: inline-block;
 }
 

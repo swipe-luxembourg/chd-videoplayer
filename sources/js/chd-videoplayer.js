@@ -298,7 +298,7 @@ $(function() {
     })
 
     // Stop button only visible for desktop (media query in play button)
-    .on('click', '.button-stop', function(e) {
+    .on('click', '.button-stop-red', function(e) {
         e.preventDefault();
         player.pause(); // triggers the 'pause' event
         return false;
